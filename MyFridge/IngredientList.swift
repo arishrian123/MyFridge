@@ -22,21 +22,24 @@ struct IngredientList: View {
   var body: some View {
     NavigationView {
       List {
-        ForEach(ingredients, id: \.title) {
+        ForEach(ingredients, id: \.id) {
           IngredientRow(ingredient: $0)
         }
         .onDelete(perform: deleteIngredient)
       }
+      .padding(.top, 20)
       .sheet(isPresented: $isPresented) {
-        AddIngredient { title, brand, expiry in
-          self.addIngredient(title: title, brand: brand, expiryDate: expiry)
+        AddIngredient { title, brand, expiry, id  in
+          self.addIngredient(title: title, brand: brand, expiryDate: expiry, id: id)
           self.isPresented = false
         }
       }
-      .navigationBarTitle(Text("My Fridge"))
-      .navigationBarItems(trailing:
+      .navigationBarTitle(Text("My Fridge 🤤"))
+      .navigationBarItems(leading: Button(action: {}, label: {
+        Text("About")
+      }),trailing:
         Button(action: { self.isPresented.toggle() }) {
-          Image(systemName: "plus")
+          Text("Add stuff!")
         }
       )
     }
@@ -55,9 +58,9 @@ struct IngredientList: View {
     // 4.
     saveContext()
   }
+  
 
-
-  func addIngredient(title: String, brand: String, expiryDate: Date) {
+  func addIngredient(title: String, brand: String, expiryDate: Date, id: UUID) {
     // 1
     let newIngredient = Ingredient(context: managedObjectContext)
 
@@ -65,6 +68,7 @@ struct IngredientList: View {
     newIngredient.title = title
     newIngredient.brand = brand
     newIngredient.expiryDate = expiryDate
+    newIngredient.id = id
 
     // 3
     saveContext()

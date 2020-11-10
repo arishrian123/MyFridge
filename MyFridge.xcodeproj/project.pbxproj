@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192DE679255A3CC500A40275 /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192DE678255A3CC500A40275 /* IngredientList.swift */; };
+		192DE67C255A3CCB00A40275 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192DE67B255A3CCB00A40275 /* IngredientRow.swift */; };
 		95710F65240A87F700911BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F64240A87F700911BD1 /* AppDelegate.swift */; };
 		95710F67240A87F700911BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F66240A87F700911BD1 /* SceneDelegate.swift */; };
 		95710F6A240A87F700911BD1 /* MyFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95710F68240A87F700911BD1 /* MyFridge.xcdatamodeld */; };
 		95710F71240A87FA00911BD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95710F70240A87FA00911BD1 /* Preview Assets.xcassets */; };
-		95710F80240A889600911BD1 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F7B240A889600911BD1 /* IngredientRow.swift */; };
 		95710F81240A889600911BD1 /* AddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F7C240A889600911BD1 /* AddIngredient.swift */; };
-		95710F83240A889600911BD1 /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F7E240A889600911BD1 /* IngredientList.swift */; };
 		95710F86240A88A300911BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95710F85240A88A300911BD1 /* Assets.xcassets */; };
 		95710F89240A88B300911BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95710F87240A88B300911BD1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192DE678255A3CC500A40275 /* IngredientList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
+		192DE67B255A3CCB00A40275 /* IngredientRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		95710F61240A87F700911BD1 /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95710F64240A87F700911BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95710F66240A87F700911BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95710F69240A87F700911BD1 /* FaveFlicks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaveFlicks.xcdatamodel; sourceTree = "<group>"; };
 		95710F70240A87FA00911BD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		95710F7B240A889600911BD1 /* IngredientRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		95710F7C240A889600911BD1 /* AddIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredient.swift; sourceTree = "<group>"; };
 		95710F7D240A889600911BD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95710F7E240A889600911BD1 /* IngredientList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
 		95710F85240A88A300911BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95710F88240A88B300911BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,9 +64,9 @@
 		95710F63240A87F700911BD1 /* MyFridge */ = {
 			isa = PBXGroup;
 			children = (
+				192DE678255A3CC500A40275 /* IngredientList.swift */,
+				192DE67B255A3CCB00A40275 /* IngredientRow.swift */,
 				95710F7C240A889600911BD1 /* AddIngredient.swift */,
-				95710F7E240A889600911BD1 /* IngredientList.swift */,
-				95710F7B240A889600911BD1 /* IngredientRow.swift */,
 				95710F64240A87F700911BD1 /* AppDelegate.swift */,
 				95710F66240A87F700911BD1 /* SceneDelegate.swift */,
 				95710F68240A87F700911BD1 /* MyFridge.xcdatamodeld */,
@@ -178,10 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95710F83240A889600911BD1 /* IngredientList.swift in Sources */,
 				95710F6A240A87F700911BD1 /* MyFridge.xcdatamodeld in Sources */,
-				95710F80240A889600911BD1 /* IngredientRow.swift in Sources */,
+				192DE679255A3CC500A40275 /* IngredientList.swift in Sources */,
 				95710F65240A87F700911BD1 /* AppDelegate.swift in Sources */,
+				192DE67C255A3CCB00A40275 /* IngredientRow.swift in Sources */,
 				95710F67240A87F700911BD1 /* SceneDelegate.swift in Sources */,
 				95710F81240A889600911BD1 /* AddIngredient.swift in Sources */,
 			);

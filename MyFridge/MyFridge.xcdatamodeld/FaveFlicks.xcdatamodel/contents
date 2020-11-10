@@ -3,9 +3,10 @@
     <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
         <attribute name="brand" optional="YES" attributeType="String"/>
         <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Ingredient" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Ingredient" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

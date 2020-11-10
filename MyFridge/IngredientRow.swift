@@ -21,14 +21,14 @@ struct IngredientRow: View {
     
     var time = "\(days)D \(hours)H \(minutes)M"
 
-    if days == 0 && hours == 0 && !(minutes.signum() == 1){
+    if days == 0 && hours == 0 && !(minutes.signum() == 1) {
       time = "Expired for \(minutes * -1)M"
     } else if days == 0 && !(hours.signum() == 1) && !(minutes.signum() == 1){
       time = "Expired for \(hours * -1)H \(minutes * -1)M"
     } else if !(days.signum() == 1) && !(hours.signum() == 1) && !(minutes.signum() == 1){
       time = "Expired for \(days * -1)D \(hours * -1)H \(minutes * -1)M"
     }
-    else if days == 0 && hours == 0 && minutes == 0{
+    else if days == 0 && hours == 0 && minutes < 0{
       time = "Expired Now"
     }
     else if days == 0 && hours != 0 && (minutes.signum() == 1){

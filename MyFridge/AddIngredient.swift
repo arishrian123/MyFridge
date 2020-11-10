@@ -5,11 +5,12 @@ import SwiftUI
 struct AddIngredient: View {
   static let DefaultIngredientTitle = "Nothing"
   static let DefaultIngredientBrand = "Nothing"
-
+  
+  let id = UUID()
   @State var title = ""
   @State var brand = ""
   @State var expiryDate = Date()
-  let onComplete: (String, String, Date) -> Void
+  let onComplete: (String, String, Date, UUID) -> Void
 
   var body: some View {
     NavigationView {
@@ -41,6 +42,6 @@ struct AddIngredient: View {
     onComplete(
       title.isEmpty ? AddIngredient.DefaultIngredientTitle : title,
       brand.isEmpty ? AddIngredient.DefaultIngredientBrand : brand,
-      expiryDate)
+      expiryDate, id)
   }
 }
